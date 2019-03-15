@@ -1,7 +1,7 @@
 {
   "name": "package-template",
   "description": "package-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Jaroslav Šmolík <grissius@gmail.com>",
   "contributors": [
     "Jaroslav Šmolík <grissius@gmail.com>",
@@ -16,7 +16,9 @@
     "url": "https://github.com/AckeeCZ/package-template"
   },
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+
+  ],
   "scripts": {
     "build": "tsc",
     "test": "NODE_PATH=src jest",
