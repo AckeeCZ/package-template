@@ -1,7 +1,7 @@
 {
     "includeDeclarations": true,
     "excludeExternals": true,
-    "name": "Desmond",
+    "name": "Package template",
     "mode": "file",
     "out": "docs"
 }
