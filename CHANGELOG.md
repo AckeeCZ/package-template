@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+<<<<<<< HEAD
 - Snyk config
 ### Changed
 - Update dependecies
+=======
+- Config and guide for: David, Snyk
+>>>>>>> Add david
 
 ## [0.0.1] - 2019-03-15
 ### Added
