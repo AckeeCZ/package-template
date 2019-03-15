@@ -5,4 +5,5 @@ docs
 jest.config.js
 tsconfig.json
 tslint.json
+cc-test-reporter
 CHANGELOG.md
