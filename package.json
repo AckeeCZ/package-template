@@ -5,7 +5,7 @@
   "author": "Jaroslav Šmolík <grissius@gmail.com>",
   "contributors": [
     "Jaroslav Šmolík <grissius@gmail.com>",
-    "Stefan Prokop <stefan.prokop@ackee.cz>"
+    "Štefan Prokop <sprokop1010@seznam.cz>"
   ],
   "main": "./dist/main.js",
   "engines": {
