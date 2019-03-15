@@ -1,1 +1,1 @@
-export { default as foo } from './lib/foo';
+export { default as math } from './lib/math';
