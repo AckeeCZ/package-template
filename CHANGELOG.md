@@ -6,17 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Snyk config
+- Config and guide for: Travis, Codeclimate, David, Snyk
+
 ### Changed
 - Update dependecies
-=======
-- Config and guide for: David, Snyk
->>>>>>> Add david
-=======
-- Config and guide for: Travis, David, Snyk
->>>>>>> Add travis config
 
 ## [0.0.1] - 2019-03-15
 ### Added
