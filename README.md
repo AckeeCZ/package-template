@@ -1,3 +1,6 @@
+<div align="center">
+
+
 # Package template
 [![Build Status](https://img.shields.io/travis/com/AckeeCZ/package-template/master.svg?style=flat-square)](https://travis-ci.com/AckeeCZ/package-template)
 [![Coverage](https://img.shields.io/codeclimate/coverage/AckeeCZ/package-template.svg?style=flat-square)](https://codeclimate.com/github/AckeeCZ/package-template)
@@ -5,6 +8,10 @@
 [![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/AckeeCZ/package-template.svg?style=flat-square)](https://snyk.io/test/github/AckeeCZ/package-template?targetFile=package.json)
 [![Dependency Status](https://img.shields.io/david/AckeeCZ/package-template.svg?style=flat-square)](https://david-dm.org/AckeeCZ/package-template)
 [![Dev Dependency Status](https://img.shields.io/david/dev/AckeeCZ/package-template.svg?style=flat-square)](https://david-dm.org/AckeeCZ/package-template?type=dev)
+
+This is template for OSS back-end projects
+
+</div>
 
 ## Local setup
 
