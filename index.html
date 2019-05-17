@@ -62,29 +62,81 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="package-template">Package template</h1>
-				<p><a href="https://travis-ci.com/AckeeCZ/package-template"><img src="https://img.shields.io/travis/com/AckeeCZ/package-template/master.svg?style=flat-square" alt="Build Status"></a>
-					<a href="https://codeclimate.com/github/AckeeCZ/package-template"><img src="https://img.shields.io/codeclimate/coverage/AckeeCZ/package-template.svg?style=flat-square" alt="Coverage"></a>
-					<a href="https://codeclimate.com/github/AckeeCZ/package-template"><img src="https://img.shields.io/codeclimate/maintainability/AckeeCZ/package-template.svg?style=flat-square" alt="Maintainability"></a>
-					<a href="https://snyk.io/test/github/AckeeCZ/package-template?targetFile=package.json"><img src="https://img.shields.io/snyk/vulnerabilities/github/AckeeCZ/package-template.svg?style=flat-square" alt="Vulnerabilities"></a>
-					<a href="https://david-dm.org/AckeeCZ/package-template"><img src="https://img.shields.io/david/AckeeCZ/package-template.svg?style=flat-square" alt="Dependency Status"></a>
-				<a href="https://david-dm.org/AckeeCZ/package-template?type=dev"><img src="https://img.shields.io/david/dev/AckeeCZ/package-template.svg?style=flat-square" alt="Dev Dependency Status"></a></p>
-				<h2 id="setup">Setup</h2>
+				<div align="center">
+					<h1 id="package-template">Package template</h1>
+					<p><a href="https://travis-ci.com/AckeeCZ/package-template"><img src="https://img.shields.io/travis/com/AckeeCZ/package-template/master.svg?style=flat-square" alt="Build Status"></a>
+						<a href="https://codeclimate.com/github/AckeeCZ/package-template"><img src="https://img.shields.io/codeclimate/coverage/AckeeCZ/package-template.svg?style=flat-square" alt="Coverage"></a>
+						<a href="https://codeclimate.com/github/AckeeCZ/package-template"><img src="https://img.shields.io/codeclimate/maintainability/AckeeCZ/package-template.svg?style=flat-square" alt="Maintainability"></a>
+						<a href="https://snyk.io/test/github/AckeeCZ/package-template?targetFile=package.json"><img src="https://img.shields.io/snyk/vulnerabilities/github/AckeeCZ/package-template.svg?style=flat-square" alt="Vulnerabilities"></a>
+						<a href="https://david-dm.org/AckeeCZ/package-template"><img src="https://img.shields.io/david/AckeeCZ/package-template.svg?style=flat-square" alt="Dependency Status"></a>
+					<a href="https://david-dm.org/AckeeCZ/package-template?type=dev"><img src="https://img.shields.io/david/dev/AckeeCZ/package-template.svg?style=flat-square" alt="Dev Dependency Status"></a></p>
+					<p>This is template for OSS back-end projects</p>
+				</div>
+				<h2 id="local-setup">Local setup</h2>
+				<h3 id="history">History</h3>
+				<ul>
+					<li>Delete <code>.git</code> folder, <code>git init</code> and create root commit</li>
+				</ul>
+				<h3 id="project-files">Project files</h3>
+				<p><strong><code>CHANGELOG</code></strong></p>
+				<ul>
+					<li>reset history</li>
+				</ul>
+				<p><strong><code>package.json</code></strong></p>
+				<ul>
+					<li>update author &amp; contributors</li>
+					<li>update name &amp; description</li>
+					<li>update repository, version</li>
+				</ul>
+				<p><strong><code>typedoc.json</code></strong></p>
+				<ul>
+					<li>update name</li>
+				</ul>
+				<p><strong><code>LICENSE</code></strong></p>
+				<ul>
+					<li>update year / owner</li>
+				</ul>
+				<p><strong><code>README</code></strong></p>
+				<ul>
+					<li>update title, description</li>
+					<li>update / remove badges</li>
+					<li>update license if changed</li>
+				</ul>
+				<h2 id="remote-services">Remote services</h2>
+				<h3 id="npm">npm</h3>
+				<pre><code class="language-yaml"><span class="hljs-attr">deploy:</span>
+<span class="hljs-attr">  provider:</span> <span class="hljs-string">npm</span>
+  <span class="hljs-comment"># TODO</span>
+<span class="hljs-attr">  email:</span> <span class="hljs-string">ackeedevelopment@gmail.com</span>
+<span class="hljs-attr">  skip_cleanup:</span> <span class="hljs-literal">true</span>
+  <span class="hljs-comment"># TODO</span>
+<span class="hljs-attr">  api_key:</span>
+<span class="hljs-attr">    secure:</span> <span class="hljs-string">G8gmvUC5aRLRicRx...=</span>
+<span class="hljs-attr">  on:</span>
+<span class="hljs-attr">    tags:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">    repo:</span> <span class="hljs-string">AckeeCZ/configuru</span></code></pre>
+				<p>To generate npm api key:</p>
+				<ol>
+					<li>Visit <a href="https://www.npmjs.com/settings/ackeecz/tokens">tokens</a> and create new one with publish permissions</li>
+					<li><code>travis login --com</code></li>
+					<li><code>travis encrypt --com TOKEN</code></li>
+				</ol>
 				<h3 id="travis">Travis</h3>
 				<ul>
-					<li>Update <code>.travis.yml</code></li>
+					<li>Check <code>.travis.yml</code> (see <code>node_js</code> for versions of node, and <code>script</code> for the task definition)</li>
 					<li>Log in to <a href="https://travis-ci.com">Travis</a></li>
-					<li>Add the project (wait for permission)</li>
-					<li>Update <code>script</code>, <code>deploy</code></li>
+					<li>Add the project (wait for permission asking as member of organization)</li>
+					<li>Update <code>script</code>, <code>deploy</code> (add npm, remove GH pages or update API key etc.)</li>
 				</ul>
 				<h3 id="codeclimate">Codeclimate</h3>
 				<ul>
 					<li>Log in to <a href="https://codeclimate.com/oss/dashboard">CodeClimate</a></li>
 					<li>Add the project</li>
 					<li>Setup travis <code>CC_TEST_REPORTER_ID</code> env</li>
-					<li>Setup coverage in <code>.travis.yml</code></li>
+					<li>Setup coverage in <code>.travis.yml</code> (will only update in <code>master</code> branch with default config)</li>
 				</ul>
 				<h3 id="snyk">Snyk</h3>
+				<p>Badge works out of the box, just update links. However, you can register the project:</p>
 				<ul>
 					<li>Log in to <a href="https://app.snyk.io">Snyk</a></li>
 					<li>Add project</li>
