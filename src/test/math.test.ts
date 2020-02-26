@@ -1,4 +1,4 @@
-import sum from 'lib/math';
+import sum from '../lib/math';
 
 describe('Math', () => {
     test('sum', () => {
