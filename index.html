@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> Package template</h1>
+			<h1>Package template</h1>
 		</div>
 	</div>
 </header>
@@ -63,7 +63,9 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<div align="center">
-					<h1 id="package-template">Package template</h1>
+					<a href="#package-template" id="package-template" style="color: inherit; text-decoration: none;">
+						<h1>Package template</h1>
+					</a>
 					<p><a href="https://travis-ci.com/AckeeCZ/package-template"><img src="https://img.shields.io/travis/com/AckeeCZ/package-template/master.svg?style=flat-square" alt="Build Status"></a>
 						<a href="https://codeclimate.com/github/AckeeCZ/package-template"><img src="https://img.shields.io/codeclimate/coverage/AckeeCZ/package-template.svg?style=flat-square" alt="Coverage"></a>
 						<a href="https://codeclimate.com/github/AckeeCZ/package-template"><img src="https://img.shields.io/codeclimate/maintainability/AckeeCZ/package-template.svg?style=flat-square" alt="Maintainability"></a>
@@ -72,12 +74,18 @@
 					<a href="https://david-dm.org/AckeeCZ/package-template?type=dev"><img src="https://img.shields.io/david/dev/AckeeCZ/package-template.svg?style=flat-square" alt="Dev Dependency Status"></a></p>
 					<p>This is template for OSS back-end projects</p>
 				</div>
-				<h2 id="local-setup">Local setup</h2>
-				<h3 id="history">History</h3>
+				<a href="#local-setup" id="local-setup" style="color: inherit; text-decoration: none;">
+					<h2>Local setup</h2>
+				</a>
+				<a href="#history" id="history" style="color: inherit; text-decoration: none;">
+					<h3>History</h3>
+				</a>
 				<ul>
 					<li>Delete <code>.git</code> folder, <code>git init</code> and create root commit</li>
 				</ul>
-				<h3 id="project-files">Project files</h3>
+				<a href="#project-files" id="project-files" style="color: inherit; text-decoration: none;">
+					<h3>Project files</h3>
+				</a>
 				<p><strong><code>CHANGELOG</code></strong></p>
 				<ul>
 					<li>reset history</li>
@@ -102,51 +110,65 @@
 					<li>update / remove badges</li>
 					<li>update license if changed</li>
 				</ul>
-				<h2 id="remote-services">Remote services</h2>
-				<h3 id="npm">npm</h3>
+				<a href="#remote-services" id="remote-services" style="color: inherit; text-decoration: none;">
+					<h2>Remote services</h2>
+				</a>
+				<a href="#npm" id="npm" style="color: inherit; text-decoration: none;">
+					<h3>npm</h3>
+				</a>
 				<pre><code class="language-yaml"><span class="hljs-attr">deploy:</span>
-<span class="hljs-attr">  provider:</span> <span class="hljs-string">npm</span>
+  <span class="hljs-attr">provider:</span> <span class="hljs-string">npm</span>
   <span class="hljs-comment"># TODO</span>
-<span class="hljs-attr">  email:</span> <span class="hljs-string">ackeedevelopment@gmail.com</span>
-<span class="hljs-attr">  skip_cleanup:</span> <span class="hljs-literal">true</span>
+  <span class="hljs-attr">email:</span> <span class="hljs-string">ackeedevelopment@gmail.com</span>
+  <span class="hljs-attr">skip_cleanup:</span> <span class="hljs-literal">true</span>
   <span class="hljs-comment"># TODO</span>
-<span class="hljs-attr">  api_key:</span>
-<span class="hljs-attr">    secure:</span> <span class="hljs-string">G8gmvUC5aRLRicRx...=</span>
-<span class="hljs-attr">  on:</span>
-<span class="hljs-attr">    tags:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">    repo:</span> <span class="hljs-string">AckeeCZ/configuru</span></code></pre>
+  <span class="hljs-attr">api_key:</span>
+    <span class="hljs-attr">secure:</span> <span class="hljs-string">G8gmvUC5aRLRicRx...=</span>
+  <span class="hljs-attr">on:</span>
+    <span class="hljs-attr">tags:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">repo:</span> <span class="hljs-string">AckeeCZ/configuru</span></code></pre>
 				<p>To generate npm api key:</p>
 				<ol>
 					<li>Visit <a href="https://www.npmjs.com/settings/ackeecz/tokens">tokens</a> and create new one with publish permissions</li>
 					<li><code>travis login --com</code></li>
 					<li><code>travis encrypt --com TOKEN</code></li>
 				</ol>
-				<h3 id="travis">Travis</h3>
+				<a href="#travis" id="travis" style="color: inherit; text-decoration: none;">
+					<h3>Travis</h3>
+				</a>
 				<ul>
 					<li>Check <code>.travis.yml</code> (see <code>node_js</code> for versions of node, and <code>script</code> for the task definition)</li>
 					<li>Log in to <a href="https://travis-ci.com">Travis</a></li>
 					<li>Add the project (wait for permission asking as member of organization)</li>
 					<li>Update <code>script</code>, <code>deploy</code> (add npm, remove GH pages or update API key etc.)</li>
 				</ul>
-				<h3 id="codeclimate">Codeclimate</h3>
+				<a href="#codeclimate" id="codeclimate" style="color: inherit; text-decoration: none;">
+					<h3>Codeclimate</h3>
+				</a>
 				<ul>
 					<li>Log in to <a href="https://codeclimate.com/oss/dashboard">CodeClimate</a></li>
 					<li>Add the project</li>
 					<li>Setup travis <code>CC_TEST_REPORTER_ID</code> env</li>
 					<li>Setup coverage in <code>.travis.yml</code> (will only update in <code>master</code> branch with default config)</li>
 				</ul>
-				<h3 id="snyk">Snyk</h3>
+				<a href="#snyk" id="snyk" style="color: inherit; text-decoration: none;">
+					<h3>Snyk</h3>
+				</a>
 				<p>Badge works out of the box, just update links. However, you can register the project:</p>
 				<ul>
 					<li>Log in to <a href="https://app.snyk.io">Snyk</a></li>
 					<li>Add project</li>
 					<li>Update badge source and link</li>
 				</ul>
-				<h3 id="david">David</h3>
+				<a href="#david" id="david" style="color: inherit; text-decoration: none;">
+					<h3>David</h3>
+				</a>
 				<ul>
 					<li>No need to integrate, just update links</li>
 				</ul>
-				<h2 id="license">License</h2>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
 				<p>This project is licensed under <a href="./LICENSE">MIT</a>.</p>
 			</div>
 		</div>
@@ -180,6 +202,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -228,7 +251,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
