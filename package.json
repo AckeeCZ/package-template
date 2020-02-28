@@ -22,7 +22,7 @@
   "keywords": [],
   "scripts": {
     "build": "tsc",
-    "test": "NODE_PATH=src jest",
+    "test": "jest",
     "test:coverage": "npm run test -- --collectCoverage",
     "lint": "tslint -t codeFrame -p .",
     "prepare": "npm run build",
