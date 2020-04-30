@@ -24,6 +24,7 @@
     "build": "tsc",
     "test": "jest",
     "test:coverage": "npm run test -- --collectCoverage",
+    "test:codecov": "codecov",
     "lint": "tslint -t codeFrame -p .",
     "prepare": "npm run build",
     "docs": "typedoc --options typedoc.json src/lib/*.ts",
@@ -32,6 +33,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^25.2.1",
+    "codecov": "^3.6.5",
     "husky": "^4.2.5",
     "jest": "^25.5.2",
     "lint-staged": "^10.2.1",
