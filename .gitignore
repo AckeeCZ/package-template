@@ -3,4 +3,4 @@ package-lock.json
 dist
 docs
 coverage
-cc-test-reporter
+tsconfig.tsbuildinfo
