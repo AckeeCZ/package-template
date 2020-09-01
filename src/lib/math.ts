@@ -6,14 +6,14 @@
  * @param withCalculation
  */
 const sum = (a: number, b: number, withCalculation = false) => {
-    const sum = a + b;
-    if (!withCalculation) {
-        return sum;
-    }
-    return {
-        sum,
-        calculation: `${a} + ${b} = ${sum}`,
-    };
-};
+  const sum = a + b
+  if (!withCalculation) {
+    return sum
+  }
+  return {
+    sum,
+    calculation: `${a} + ${b} = ${sum}`,
+  }
+}
 
-export default sum;
+export default sum
