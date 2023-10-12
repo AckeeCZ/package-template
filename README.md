@@ -1,5 +1,12 @@
 <div align="center">
 
+## DEPRECATION NOTICE
+
+This package is no longer maintained.
+</div>
+
+<div align="center">
+
 # Package template
 
 [![Build Status](https://img.shields.io/travis/com/AckeeCZ/package-template/master.svg?style=flat-square)](https://travis-ci.com/AckeeCZ/package-template)
